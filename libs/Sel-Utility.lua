@@ -2362,23 +2362,18 @@ function arts_active()
 end
 
 -- Movement Handling
-lastlocation = 'fff':pack(0,0,0)
+lastlocation = {X=0,Y=0}
 moving = false
 wasmoving = false
 
 windower.raw_register_event('outgoing chunk',function(id,data,modified,is_injected,is_blocked)
     if id == 0x015 then
-        moving = lastlocation ~= modified:sub(5, 16)
-        lastlocation = modified:sub(5, 16)
-		
-		if wasmoving ~= moving then
-			if not (player.status == 'Event' or (os.clock() < (next_cast + 1)) or pet_midaction() or (os.clock() < (petWillAct + 2))) then
-				send_command('gs c forceequip')
-			end
-		end
+		local currentlocation = {X=modified:sub(5,8), Y=modified:sub(13,16)}
+        moving = currentlocation.X ~= lastlocation.X or currentlocation.Y ~= lastlocation.Y
+        lastlocation = currentlocation
 
 		if moving then
-			if player.movement_speed <= 5 and sets.Kiting and not (player.status == 'Event' or (os.clock() < (next_cast + 1)) or pet_midaction() or (os.clock() < (petWillAct + 2))) then
+			if sets.Kiting and not (player.status == 'Event' or (os.clock() < (next_cast + 1)) or pet_midaction() or (os.clock() < (petWillAct + 2))) then
 				send_command('gs c forceequip')
 			end
 			if state.RngHelper.value then
@@ -2390,9 +2385,14 @@ windower.raw_register_event('outgoing chunk',function(id,data,modified,is_inject
 			end
 			
 			if not state.Uninterruptible.value then delayed_cast = '' end
+		elseif wasmoving then
+			if not (player.status == 'Event' or (os.clock() < (next_cast + 1)) or pet_midaction() or (os.clock() < (petWillAct + 2))) then
+				send_command('gs c forceequip')
+			end
 		end
 		
 		wasmoving = moving
+
     end
 end)
 		
@@ -2421,11 +2421,14 @@ function get_effective_player_tp(spell, WSset)
 	if state.Buff['Warcry'] and player.main_job == "WAR" and lastwarcry == player.name then effective_tp = effective_tp + warcry_tp_bonus end
 	if WSset.ear1 == "Moonshade Earring" or WSset.ear2 == "Moonshade Earring" then effective_tp = effective_tp + 250 end
 	if WSset.head == "Mpaca's Cap" then effective_tp = effective_tp + 200 end
+	if WSset.body == "Ikenga's Vest" then effective_tp = effective_tp + 170 end
 	
 	if spell.skill == 25 or spell.skill == 26 then
 		if data.equipment.aeonic_weapons:contains(player.equipment.range) then effective_tp = effective_tp + 500 end
 	else
-		if data.equipment.aeonic_weapons:contains(player.equipment.main) then effective_tp = effective_tp + 500 end
+		if data.equipment.aeonic_weapons:contains(player.equipment.main) then effective_tp = effective_tp + 500
+		elseif player.equipment.main == 'Kunimune +1' then effective_tp = effective_tp + 500
+		end
 	end
 
 	return effective_tp
