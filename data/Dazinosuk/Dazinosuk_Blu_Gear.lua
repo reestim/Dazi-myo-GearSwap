@@ -465,10 +465,12 @@ function init_gear_sets()
 	sets.weapons.MeleeClubs = {main="Nehushtan",sub="Nehushtan"}
 	sets.weapons.Almace = {main="Almace",sub="Sequence"}
 	sets.weapons.Sequence = {main="Sequence",sub="Almace"}
-	sets.weapons.Kaja = {main="Naegling",sub="Colada"}
+	--sets.weapons.Kaja = {main="Naegling",sub="Colada"}
+	sets.weapons.Kaja = {main="Machaera",sub="Colada"}
 	sets.weapons.MagicWeapons = {main="Nibiru Cudgel",sub="Nibiru Cudgel"}
 	sets.weapons.MaccWeapons = {main="Iris",sub="Iris"}
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
+	sets.weapons.thib = {main="Machaera" , sub = "Colada"}
 
 	-- Engaged sets
 
