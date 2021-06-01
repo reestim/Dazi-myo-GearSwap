@@ -290,7 +290,7 @@ function init_gear_sets()
 
 	sets.midcast['Enfeebling Magic'] = {main="Nibiru Cudgel",sub="Nibiru Cudgel",ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +1",neck="Mirage Stole +1",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Jhakri Robe +2",hands="Regal Cuffs",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
+		body="Jhakri Robe +2",hands="Jhakri Cuffs +1",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
 		back=gear.nuke_jse_back,waist="Luminary Sash",legs="Psycloth Lappas",feet="Skaoi Boots"}
 
 	sets.midcast['Dark Magic'] = {main="Nibiru Cudgel",sub="Nibiru Cudgel",ammo="Pemphredo Tathlum",
@@ -465,8 +465,8 @@ function init_gear_sets()
 	sets.weapons.MeleeClubs = {main="Nehushtan",sub="Nehushtan"}
 	sets.weapons.Almace = {main="Almace",sub="Sequence"}
 	sets.weapons.Sequence = {main="Sequence",sub="Almace"}
-	--sets.weapons.Kaja = {main="Naegling",sub="Colada"}
-	sets.weapons.Kaja = {main="Machaera",sub="Colada"}
+	sets.weapons.Kaja = {main="Naegling",sub="Colada"}
+	--sets.weapons.Kaja = {main="Machaera",sub="Colada"}
 	sets.weapons.MagicWeapons = {main="Nibiru Cudgel",sub="Nibiru Cudgel"}
 	sets.weapons.MaccWeapons = {main="Iris",sub="Iris"}
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
