@@ -267,7 +267,7 @@ function init_gear_sets()
     
     sets.idle.Avatar = {main="Gridarvor",sub="Oneiros Grip",ammo="Sancus Sachet",
         head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="C. Palug Earring",ear2="Evans Earring",
-        body="Shomonjijoe +1",hands="Asteria Mitts",ring1="Evoker's Ring",ring2="Stikini Ring +1",
+        body="Shomonjijoe +1",hands="Asteria Mitts",ring1="Evoker's Ring",ring2="Varar Ring +1"--[[ring2="Stikini Ring +1"--]],
         back="Moonlight Cape",waist="Lucidity Sash",legs="Assid. Pants +1",feet="convo. pigaches +1"}
 		
     sets.idle.PDT.Avatar = {main="Malignance Pole",sub="Oneiros Grip",ammo="Sancus Sachet",
@@ -277,7 +277,7 @@ function init_gear_sets()
 
     sets.idle.Spirit = {main="Gridarvor",sub="Oneiros Grip",ammo="Sancus Sachet",
         head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="C. Palug Earring",ear2="Ethereal Earring",
-        body="Shomonjijoe +1",hands=gear.merlinic_refresh_hands,ring1="Evoker's Ring",ring2="Stikini Ring +1",
+        body="Shomonjijoe +1",hands=gear.merlinic_refresh_hands,ring1="Evoker's Ring",ring2="Varar Ring +1"--[[ring2="Stikini Ring +1"--]],
         back="Conveyance Cape",waist="Lucidity Sash",legs="Assid. Pants +1",feet="convo. pigaches +1"}
 		
     sets.idle.PDT.Spirit = {main="Malignance Pole",sub="Oneiros Grip",ammo="Sancus Sachet",
