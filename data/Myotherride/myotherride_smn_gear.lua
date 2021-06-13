@@ -191,14 +191,14 @@ function init_gear_sets()
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
     
     sets.midcast.Pet.PhysicalBloodPactRage = {main="Gridarvor",sub="Elan Strap +1",ammo="Sancus Sachet",
-        head="Helios Band",neck="Shulmanu Collar",ear1="Lugalbanda Earring",ear2="Gelos Earring",
+        head="Helios Band",neck="Shulmanu Collar",ear1="Lugalbanda Earring",ear2="Kyrene's earring"--[["Gelos Earring"--]],
         body="con. doublet +2",hands=gear.merlinic_physpact_hands,ring1="Varar Ring +1",ring2="C. Palug Ring",
         back=gear.phys_jse_back,waist="Incarnation Sash",legs="Apogee Slacks +1",feet="Apogee Pumps +1"}
 		
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = {feet="convo. pigaches +1"}
 
     sets.midcast.Pet.MagicalBloodPactRage = {main=gear.grioavolr_pet_staff,sub="Elan Strap +1",ammo="Sancus Sachet",
-        head="Apogee Crown +1",neck="Adad Amulet",ear1="Lugalbanda Earring",ear2="Gelos Earring",
+        head="Apogee Crown +1",neck="Adad Amulet",ear1="Lugalbanda Earring",ear2="Kyrene's earring"--[["Gelos Earring"--]],
         body="con. doublet +2",hands=gear.merlinic_magpact_hands,ring1="Varar Ring +1",ring2="Varar Ring +1",
         back=gear.magic_jse_back,waist="Regal Belt",legs="Enticer's Pants",feet="Apogee Pumps +1"}
 
@@ -215,7 +215,7 @@ function init_gear_sets()
 	sets.midcast.Pet['Impact'] = sets.midcast.Pet.DebuffBloodPactWard
 
 	sets.midcast.Pet['Flaming Crush'] = {main=gear.grioavolr_pet_staff,sub="Elan Strap +1",ammo="Sancus Sachet",
-        head="Apogee Crown +1",neck="Adad Amulet",ear1="Lugalbanda Earring",ear2="Gelos Earring",
+        head="Apogee Crown +1",neck="Adad Amulet",ear1="Lugalbanda Earring",ear2="Kyrene's earring"--[["Gelos Earring"--]],
         body="con. doublet +2",hands=gear.merlinic_magpact_hands,ring1="Varar Ring +1",ring2="Varar Ring +1",
         back=gear.phys_jse_back,waist="Regal Belt",legs="Apogee Slacks +1",feet="Apogee Pumps +1"}
 		
