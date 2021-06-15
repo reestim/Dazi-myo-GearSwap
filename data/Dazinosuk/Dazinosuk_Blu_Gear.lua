@@ -102,7 +102,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Aurgelmir Orb +1",
 				  head="Lilitu Headpiece",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-                  body="Adhemar Jacket +1",hands="Jhakri Cuffs +1",ring1="Epona's Ring",ring2="Apate Ring",
+                  body="Adhemar Jacket",hands="Jhakri Cuffs +1",ring1="Epona's Ring",ring2="Apate Ring",
 				  back=gear.da_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
 	sets.precast.WS.Acc = {ammo="Falcon Eye",
@@ -122,7 +122,7 @@ function init_gear_sets()
 
 	sets.precast.WS.Fodder = {ammo="Aurgelmir Orb +1",
 				  head="Lilitu Headpiece",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-                  body="Adhemar Jacket +1",hands="Jhakri Cuffs +1",ring1="Epona's Ring",ring2="Apate Ring",
+                  body="Adhemar Jacket",hands="Jhakri Cuffs +1",ring1="Epona's Ring",ring2="Apate Ring",
 				  back=gear.da_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -456,7 +456,7 @@ function init_gear_sets()
     sets.MP_Knockback = {}
 	sets.SuppaBrutal = {ear1="Suppanomimi", ear2="Brutal Earring"}
 	sets.DWEarrings = {ear1="Dudgeon Earring",ear2="Heartseeker Earring"}
-	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",waist="Reiki Yotai",legs="Carmine Cuisses +1"}
+	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket",waist="Reiki Yotai",legs="Carmine Cuisses +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	-- Weapons sets
@@ -481,7 +481,7 @@ function init_gear_sets()
 
 	sets.engaged.AM = {main="Tizona",sub="Almace",ammo="Ginsen",
 			    head=gear.herculean_ta_head,neck="Mirage Stole +1",ear1="Cessance Earring",ear2="Telos Earring",
-			    body="Adhemar Jacket +1",hands=gear.herculean_ta_hands,ring1="Epona's Ring",ring2="Petrov Ring",
+			    body="Adhemar Jacket",hands=gear.herculean_ta_hands,ring1="Epona's Ring",ring2="Petrov Ring",
 			    back=gear.stp_jse_back,waist="Windbuffet Belt",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 
